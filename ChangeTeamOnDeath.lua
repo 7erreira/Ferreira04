@@ -1,0 +1,7 @@
+game:GetService("Players").PlayerAdded:Connect(function(p)
+	p.CharacterAdded:Connect(function()
+		p.Character.Humanoid.Died:Connect(function()
+			p.TeamColor = BrickColor.new("Really red")
+		end)
+	end)
+end)
